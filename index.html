@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f3fb">
+  <meta name="description" content="SunCare: informação simples sobre proteção solar e cuidados com a pele.">
+  <title>SunCare | Proteção e cuidado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="topo">
+    <a class="logo" href="#topo"><span class="logo-mark">✿</span>SunCare</b></a>
+    <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="#protecao">Proteção solar</a>
+      <a href="#tipos">Tipos de protetor</a>
+      <a href="#cuidados">Cuidados</a>
+    </nav>
+    <a class="nav-cta" href="#protecao">Explorar <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-photo"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <span class="eyebrow"><i></i> UM CONVITE AO AUTOCUIDADO</span>
+        <h1>Sua pele merece<br><em>cuidado todos os dias.</em></h1>
+        <p>Um guia leve e acessível sobre proteção solar e escolhas que fazem bem à sua pele.</p>
+        <a class="button button-primary" href="#protecao">Descubra como cuidar <span>↓</span></a>
+      </div>
+      <a class="scroll-cue" href="#protecao" aria-label="Rolar para a próxima seção">↓</a>
+      <span class="hero-caption">SUNCARE · PROTEÇÃO E SAÚDE</span>
+    </section>
+
+    <section class="protection section" id="protecao">
+      <div class="section-intro">
+        <span class="eyebrow">UM HÁBITO QUE FAZ DIFERENÇA</span>
+        <h2>Proteger a pele é<br><em>cuidar de você.</em></h2>
+        <p>A exposição ao sol faz parte da rotina, mas o cuidado diário ajuda a prevenir queimaduras, manchas e o envelhecimento precoce.</p>
+      </div>
+      <div class="benefits">
+        <article class="benefit">
+          <span class="benefit-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 39 10v12c0 10-6 17-15 22C15 39 9 32 9 22V10L24 4Z"/><path d="m16 24 6 6 11-13"/></svg></span>
+          <h3>Ajuda a prevenir danos</h3><p>Reduz os efeitos da exposição aos raios UV.</p>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24C38 11 32 5 24 5Z"/><path d="M18 21c2-3 4-4 6-4s4 1 6 4"/></svg></span>
+          <h3>Cuida da uniformidade</h3><p>Ajuda a prevenir manchas causadas pelo sol.</p>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M24 13v12l8 5M8 8l5 5M40 8l-5 5"/></svg></span>
+          <h3>É cuidado a longo prazo</h3><p>Ajuda a preservar a saúde da pele ao longo dos anos.</p>
+        </article>
+      </div>
+      <div class="mini-note"><span>✦</span><p>Escolha um protetor de amplo espectro, com proteção UVA e UVB, e FPS 30 ou superior. Aplique e reaplique conforme as instruções da embalagem.</p></div>
+    </section>
+
+    <section class="skin-section section" id="tipos">
+      <div class="section-heading">
+        <span class="eyebrow">ESCOLHAS QUE COMBINAM COM VOCÊ</span>
+        <h2>Tipos de protetor<br><em>para cada tipo de pele.</em></h2>
+        <p>Passe o mouse ou toque em uma opção para conhecer a textura mais indicada.</p>
+      </div>
+
+      <div class="product-showcase">
+        <div class="product-options" role="tablist" aria-label="Tipos de protetor solar">
+          <button class="product-option active" type="button" role="tab" aria-selected="true" data-product="oleosa">
+            <span class="product-image"><img src="static/img/protetor-oleosa.jpg" alt="Imagem ilustrativa de protetor solar em gel"></span>
+            <span class="product-name">Pele oleosa</span>
+            <span class="product-short">Gel e toque seco</span>
+          </button>
+          <button class="product-option" type="button" role="tab" aria-selected="false" data-product="seca">
+            <span class="product-image"><img src="static/img/protetor-seca.jpg" alt="Imagem ilustrativa de protetor solar cremoso"></span>
+            <span class="product-name">Pele seca</span>
+            <span class="product-short">Fórmula hidratante</span>
+          </button>
+          <button class="product-option" type="button" role="tab" aria-selected="false" data-product="mista">
+            <span class="product-image"><img src="static/img/protetor-mista.jpg" alt="Imagem ilustrativa de protetor solar fluido"></span>
+            <span class="product-name">Pele mista</span>
+            <span class="product-short">Textura equilibrada</span>
+          </button>
+          <button class="product-option" type="button" role="tab" aria-selected="false" data-product="sensivel">
+            <span class="product-image"><img src="static/img/protetor-sensivel.jpg" alt="Imagem ilustrativa de protetor solar para pele sensível"></span>
+            <span class="product-name">Pele sensível</span>
+            <span class="product-short">Fórmula suave</span>
+          </button>
+          <button class="product-option" type="button" role="tab" aria-selected="false" data-product="madura">
+            <span class="product-image"><img src="static/img/protetor-madura.jpg" alt="Imagem ilustrativa de protetor solar hidratante"></span>
+            <span class="product-name">Pele madura</span>
+            <span class="product-short">Hidratação e conforto</span>
+          </button>
+        </div>
+
+        <article class="product-detail" aria-live="polite">
+          <div class="product-detail-copy">
+            <span class="tip-topline" id="productLabel">PELE OLEOSA</span>
+            <h3 id="productTitle">Gel ou toque seco</h3>
+            <p id="productText">Texturas leves, em gel ou com acabamento matte, podem ajudar a reduzir a sensação de oleosidade ao longo do dia.</p>
+            <span class="product-note" id="productNote">DICA: procure opções não comedogênicas.</span>
+          </div>
+          <div class="product-detail-image">
+            <img id="featuredProduct" src="static/img/protetor-oleosa.jpg" alt="Protetor solar ilustrativo para pele oleosa">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="care-section section" id="cuidados">
+      <div class="care-photo" role="img" aria-label="Acessórios de proteção solar, como chapéu e óculos de sol"></div>
+      <div class="care-copy">
+        <span class="eyebrow">SEM COMPLICAÇÃO</span>
+        <h2>Pequenos cuidados.<br><em>Grandes benefícios.</em></h2>
+        <p>Uma rotina simples já pode fazer diferença:</p>
+        <ul class="care-list">
+          <li><span>01</span> Use protetor solar todos os dias.</li>
+          <li><span>02</span> Reaplique conforme a orientação do produto.</li>
+          <li><span>03</span> Combine proteção com chapéu, óculos e sombra.</li>
+          <li><span>04</span> Mantenha a pele limpa e hidratada.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="closing">
+      <span class="closing-flower">✿</span>
+      <span class="eyebrow">SUNCARE</span>
+      <h2>Prevenir hoje é cuidar<br>da sua pele <em>amanhã.</em></h2>
+      <a class="button button-light" href="#topo">Voltar ao início ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <a class="logo footer-logo" href="#topo"><span class="logo-mark">✿</span> SunCare</b></a>
+      <p>Um guia educativo sobre proteção solar e saúde da pele.</p>
+      <details class="references">
+        <summary>Referências e créditos</summary>
+        <div class="reference-content">
+          <p><b>Trabalho-base:</b> “Fotoenvelhecimento e Saúde da Pele Depois dos 40” (UNINOVE, 2026).</p>
+          <p>GUAN, Linna L.; LIM, Henry W.; MOHAMMAD, Tasneem F. <i>Sunscreens and Photoaging: A Review of Current Literature.</i> American Journal of Clinical Dermatology, 2021.</p>
+          <p>KALTCHENKO, Maria V.; CHIEN, Anna L. <i>Photoaging: Current Concepts on Molecular Mechanisms, Prevention, and Treatment.</i> American Journal of Clinical Dermatology, 2025.</p>
+          <p>PEDIĆ, Lovre; PONDELJAK, Nives; ŠITUM, Mirna. <i>Recent information on photoaging mechanisms and the preventive role of topical sunscreen products.</i> Acta Dermatovenerologica Alpina, Pannonica et Adriatica, 2020.</p>
+          <p><a href="https://www.biodermabrasil.com/sua-pele/pele-e-o-sol/o-que-e-fotoenvelhecimento" target="_blank" rel="noopener">BIODERMA — Fotoenvelhecimento: o que é, causas e como cuidar.</a></p>
+          <p class="credit">Conteúdo resumido e organizado em formato educativo. A imagem do protetor solar é ilustrativa. Este site não substitui avaliação dermatológica.</p>
+        </div>
+      </details>
+    </div>
+    <div class="footer-bottom"><span>© 2026 SunCare</span><span>Informação que inspira cuidado.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
