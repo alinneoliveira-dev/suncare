@@ -1,159 +1,535 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f8f3fb">
-  <meta name="description" content="SunCare: informação simples sobre proteção solar e cuidados com a pele.">
-  <title>SunCare</title>
+  <meta name="description" content="SunCare: conheça o fotoenvelhecimento, suas causas e os cuidados com a saúde da pele após os 40 anos.">
+  <title>SunCare | Fotoenvelhecimento e Saúde da Pele</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" href="static/img/icon-protetor-solar.png">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="static/img/icon-protetor-solar.png">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="header" id="topo">
-    <a class="logo" href="#topo"><span class="logo-mark">✿</span>SunCare</a>
-    <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <a class="logo" href="#topo">
+      <span class="logo-mark">✿</span>SunCare
+    </a>
+    <button
+      class="menu-button"
+      id="menuButton"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="nav">
+
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="nav" id="nav">
-      <a href="#protecao">Proteção solar</a>
-      <a href="#tipos">Tipos de protetor</a>
+      <a href="#fotoenvelhecimento">O que é?</a>
+      <a href="#alteracoes">Alterações</a>
+      <a href="#prevencao">Prevenção</a>
       <a href="#cuidados">Cuidados</a>
     </nav>
-    <a class="nav-cta" href="#protecao">Explorar <span>↗</span></a>
+
+    <a class="nav-cta" href="#fotoenvelhecimento">
+      Explorar <span>↗</span>
+    </a>
+
   </header>
 
+
   <main>
+
     <section class="hero">
-      <div class="hero-photo"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <span class="eyebrow"><i></i> UM CONVITE AO AUTOCUIDADO</span>
-        <h1>Sua pele merece<br><em>cuidado todos os dias.</em></h1>
-        <p>Um guia leve e acessível sobre proteção solar e escolhas que fazem bem à sua pele.</p>
-        <a class="button button-primary" href="#protecao">Descubra como cuidar <span>↓</span></a>
-      </div>
-      <a class="scroll-cue" href="#protecao" aria-label="Rolar para a próxima seção">↓</a>
-      <span class="hero-caption">SUNCARE · PROTEÇÃO E SAÚDE</span>
-    </section>
 
-    <section class="protection section" id="protecao">
-      <div class="section-intro">
-        <span class="eyebrow">UM HÁBITO QUE FAZ DIFERENÇA</span>
-        <h2>Proteger a pele é<br><em>cuidar de você.</em></h2>
-        <p>A exposição ao sol faz parte da rotina, mas o cuidado diário ajuda a prevenir queimaduras, manchas e o envelhecimento precoce.</p>
-      </div>
-      <div class="benefits">
-        <article class="benefit">
-          <span class="benefit-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 39 10v12c0 10-6 17-15 22C15 39 9 32 9 22V10L24 4Z"/><path d="m16 24 6 6 11-13"/></svg></span>
-          <h3>Ajuda a prevenir danos</h3><p>Reduz os efeitos da exposição aos raios UV.</p>
-        </article>
-        <article class="benefit">
-          <span class="benefit-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24C38 11 32 5 24 5Z"/><path d="M18 21c2-3 4-4 6-4s4 1 6 4"/></svg></span>
-          <h3>Cuida da uniformidade</h3><p>Ajuda a prevenir manchas causadas pelo sol.</p>
-        </article>
-        <article class="benefit">
-          <span class="benefit-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M24 13v12l8 5M8 8l5 5M40 8l-5 5"/></svg></span>
-          <h3>É cuidado a longo prazo</h3><p>Ajuda a preservar a saúde da pele ao longo dos anos.</p>
-        </article>
-      </div>
-      <div class="mini-note">
-        <span><img src="static/img/icon-ideia.png" alt="Ícone de lâmpada"></span>
-        <p>Escolha um protetor de amplo espectro, com proteção UVA e UVB, e FPS 30 ou superior. Aplique e reaplique conforme as instruções da embalagem.</p></div>
-    </section>
+  <div class="hero-photo"></div>
+  <div class="hero-shade"></div>
 
-    <section class="skin-section section" id="tipos">
+  <div class="hero-content">
+
+    <span class="eyebrow">
+      <i></i> UM CONVITE AO AUTOCUIDADO
+    </span>
+
+    <h1>
+      Sua pele merece<br>
+      <em>cuidado todos os dias.</em>
+    </h1>
+
+    <p>
+      Um guia leve e acessível sobre proteção solar e escolhas
+      que fazem bem à sua pele.
+    </p>
+
+    <a class="button button-primary" href="#fotoenvelhecimento">
+      Descubra como cuidar <span>↓</span>
+    </a>
+
+  </div>
+
+  <span class="hero-caption">
+    SUNCARE · PROTEÇÃO E SAÚDE
+  </span>
+
+</section>
+
+    <section class="section about-section" id="fotoenvelhecimento">
       <div class="section-heading">
-        <span class="eyebrow">ESCOLHAS QUE COMBINAM COM VOCÊ</span>
-        <h2>Tipos de protetor<br><em>para cada tipo de pele.</em></h2>
-        <p>Passe o mouse ou toque em uma opção para conhecer a textura mais indicada.</p>
+        <span class="eyebrow">CONHEÇA MAIS SOBRE SUA PELE</span>
+        <h2>
+          O tempo passa.<br>
+          <em>Entender a pele faz diferença.</em>
+        </h2>
+        <p>
+          Conhecer as mudanças que acontecem com a pele é um passo
+          importante para compreender suas necessidades e cuidar
+          melhor da saúde cutânea.
+        </p>
+      </div>
+      <div class="about-grid">
+        <article class="info-card">
+          <div class="info-card-heading">
+            <span class="info-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="24" r="8"/>
+                <path d="M24 3v7M24 38v7M3 24h7M38 24h7M9 9l5 5M34 34l5 5M39 9l-5 5M14 34l-5 5"/>
+              </svg>
+            </span>
+            <h3>O que é?</h3>
+          </div>
+          <p>
+            O fotoenvelhecimento é o envelhecimento prematuro da pele
+            causado principalmente pela exposição à radiação ultravioleta
+            (UVA e UVB), luz visível, como a luz azul de telas,
+            poluição e tabagismo.
+          </p>
+
+          <p>
+            Esses fatores podem degradar o colágeno e a elastina,
+            contribuindo para a redução da firmeza, da elasticidade
+            e do brilho natural da pele.
+          </p>
+
+        </article>
+
+        <article class="info-card objective-card">
+
+          <div class="info-card-heading">
+
+            <span class="info-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="23" cy="24" r="17"/>
+                <circle cx="23" cy="24" r="10"/>
+                <circle cx="23" cy="24" r="3"/>
+                <path d="m25 22 16-16M32 6h9v9"/>
+              </svg>
+            </span>
+
+            <h3>Objetivo</h3>
+
+          </div>
+
+          <p>
+            Compreender os mecanismos do fotoenvelhecimento,
+            identificar suas principais alterações e analisar
+            a importância dos cuidados com a saúde da pele.
+          </p>
+
+          <p>
+            Promover conhecimento para escolhas mais conscientes
+            e hábitos que favoreçam o envelhecimento saudável.
+          </p>
+
+        </article>
+
       </div>
 
-      <div class="product-showcase">
-        <div class="product-options" role="tablist" aria-label="Tipos de protetor solar">
-          <button class="product-option active" type="button" role="tab" aria-selected="true" data-product="oleosa">
-            <span class="product-image"><img src="static/img/protetor-oleosa.jpg" alt="Imagem ilustrativa de protetor solar em gel"></span>
-            <span class="product-name">Pele oleosa</span>
-            <span class="product-short">Gel e toque seco</span>
-          </button>
-          <button class="product-option" type="button" role="tab" aria-selected="false" data-product="seca">
-            <span class="product-image"><img src="static/img/protetor-seca.jpg" alt="Imagem ilustrativa de protetor solar cremoso"></span>
-            <span class="product-name">Pele seca</span>
-            <span class="product-short">Fórmula hidratante</span>
-          </button>
-          <button class="product-option" type="button" role="tab" aria-selected="false" data-product="mista">
-            <span class="product-image"><img src="static/img/protetor-mista.jpg" alt="Imagem ilustrativa de protetor solar fluido"></span>
-            <span class="product-name">Pele mista</span>
-            <span class="product-short">Textura equilibrada</span>
-          </button>
-          <button class="product-option" type="button" role="tab" aria-selected="false" data-product="sensivel">
-            <span class="product-image"><img src="static/img/protetor-sensivel.jpg" alt="Imagem ilustrativa de protetor solar para pele sensível"></span>
-            <span class="product-name">Pele sensível</span>
-            <span class="product-short">Fórmula suave</span>
-          </button>
-          <button class="product-option" type="button" role="tab" aria-selected="false" data-product="madura">
-            <span class="product-image"><img src="static/img/protetor-madura.jpg" alt="Imagem ilustrativa de protetor solar hidratante"></span>
-            <span class="product-name">Pele madura</span>
-            <span class="product-short">Hidratação e conforto</span>
-          </button>
+    </section>
+
+    <section class="alterations-section section" id="alteracoes">
+
+      <div class="section-heading">
+        <span class="eyebrow">ENTENDENDO AS MUDANÇAS</span>
+
+        <h2>
+          O que muda na pele<br>
+          <em>após os 40 anos?</em>
+        </h2>
+
+        <p>
+          Com o passar dos anos, a pele pode apresentar mudanças
+          naturais e alterações relacionadas à exposição acumulada
+          a fatores externos.
+        </p>
+      </div>
+
+
+      <div class="alterations-grid">
+
+        <article class="alteration-card">
+          <span class="alteration-number">01</span>
+          <span class="alteration-icon">〰</span>
+          <h3>Rugas e linhas de expressão</h3>
+          <p>
+            Marcas que se tornam mais evidentes com a perda gradual
+            de colágeno e elasticidade.
+          </p>
+        </article>
+
+
+        <article class="alteration-card">
+          <span class="alteration-number">02</span>
+          <span class="alteration-icon">✧</span>
+          <h3>Manchas escuras</h3>
+          <p>
+            Alterações na pigmentação, como manchas associadas
+            à exposição solar acumulada.
+          </p>
+        </article>
+
+
+        <article class="alteration-card">
+          <span class="alteration-number">03</span>
+          <span class="alteration-icon">◌</span>
+          <h3>Perda de firmeza</h3>
+          <p>
+            A diminuição de colágeno e elastina pode deixar a pele
+            menos firme e elástica.
+          </p>
+        </article>
+
+
+        <article class="alteration-card">
+          <span class="alteration-number">04</span>
+          <span class="alteration-icon">⌁</span>
+          <h3>Textura áspera</h3>
+          <p>
+            A superfície da pele pode apresentar irregularidades
+            e alterações na sua suavidade.
+          </p>
+        </article>
+
+
+        <article class="alteration-card">
+          <span class="alteration-number">05</span>
+          <span class="alteration-icon">♡</span>
+          <h3>Flacidez</h3>
+          <p>
+            A redução da sustentação natural pode contribuir
+            para a perda de contorno e firmeza.
+          </p>
+        </article>
+
+
+        <article class="alteration-card">
+          <span class="alteration-number">06</span>
+          <span class="alteration-icon">◇</span>
+          <h3>Barreira cutânea fragilizada</h3>
+          <p>
+            A pele pode apresentar maior ressecamento e sensibilidade,
+            exigindo atenção especial à hidratação.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+    <section class="prevention-section section" id="prevencao">
+
+      <div class="prevention-content">
+
+        <div class="prevention-heading">
+
+          <span class="eyebrow">O CUIDADO COMEÇA NA ROTINA</span>
+
+          <h2>
+            Como prevenir?<br>
+            <em>Pequenos hábitos fazem diferença.</em>
+          </h2>
+
+          <p>
+            Algumas escolhas do dia a dia contribuem para a manutenção
+            da saúde da pele e ajudam a reduzir os efeitos de fatores
+            que aceleram seu envelhecimento.
+          </p>
+
         </div>
 
-        <article class="product-detail" aria-live="polite">
-          <div class="product-detail-copy">
-            <span class="tip-topline" id="productLabel">PELE OLEOSA</span>
-            <h3 id="productTitle">Gel ou toque seco</h3>
-            <p id="productText">Texturas leves, em gel ou com acabamento matte, podem ajudar a reduzir a sensação de oleosidade ao longo do dia.</p>
-            <span class="product-note" id="productNote">DICA: procure opções não comedogênicas.</span>
-          </div>
-          <div class="product-detail-image">
-            <img id="featuredProduct" src="static/img/protetor-oleosa.jpg" alt="Protetor solar ilustrativo para pele oleosa">
-          </div>
-        </article>
+
+        <div class="prevention-list">
+
+          <article class="prevention-item">
+            <span class="prevention-icon">☀</span>
+            <div>
+              <h3>Proteção contra a exposição solar</h3>
+              <p>
+                Evite a exposição excessiva à radiação ultravioleta
+                e procure sombra nos períodos de maior intensidade solar.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="prevention-item">
+            <span class="prevention-icon">♧</span>
+            <div>
+              <h3>Hidratação da pele</h3>
+              <p>
+                Mantenha a pele hidratada com produtos adequados
+                às suas características e necessidades.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="prevention-item">
+            <span class="prevention-icon">♡</span>
+            <div>
+              <h3>Alimentação equilibrada</h3>
+              <p>
+                Priorize alimentos variados, especialmente frutas,
+                legumes e verduras ricos em antioxidantes.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="prevention-item">
+            <span class="prevention-icon">◉</span>
+            <div>
+              <h3>Evite hábitos prejudiciais</h3>
+              <p>
+                Reduza o consumo excessivo de álcool e evite o tabagismo,
+                que também podem prejudicar a saúde da pele.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="prevention-item">
+            <span class="prevention-icon">☾</span>
+            <div>
+              <h3>Qualidade do sono</h3>
+              <p>
+                Durma bem e procure manter uma rotina que ajude
+                a controlar o estresse.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
       </div>
+
+
+      <aside class="prevention-message">
+
+        <span class="message-flower">✿</span>
+
+        <p>
+          Sua pele merece<br>
+          <em>esse cuidado!</em>
+        </p>
+
+        <span class="message-decoration"></span>
+
+      </aside>
+
     </section>
 
     <section class="care-section section" id="cuidados">
-      <div class="care-photo" role="img" aria-label="Acessórios de proteção solar, como chapéu e óculos de sol"></div>
-      <div class="care-copy">
-        <span class="eyebrow">SEM COMPLICAÇÃO</span>
-        <h2>Pequenos cuidados.<br><em>Grandes benefícios.</em></h2>
-        <p>Uma rotina simples já pode fazer diferença:</p>
-        <ul class="care-list">
-          <li><span>01</span> Use protetor solar todos os dias.</li>
-          <li><span>02</span> Reaplique conforme a orientação do produto.</li>
-          <li><span>03</span> Combine proteção com chapéu, óculos e sombra.</li>
-          <li><span>04</span> Mantenha a pele limpa e hidratada.</li>
-        </ul>
+
+      <div class="section-heading">
+        <span class="eyebrow">UM OLHAR PARA O AUTOCUIDADO</span>
+
+        <h2>
+          Cuidados essenciais<br>
+          <em>para uma pele mais saudável.</em>
+        </h2>
+
+        <p>
+          Mais do que aparência, cuidar da pele é também preservar
+          sua saúde, seu equilíbrio e seu bem-estar.
+        </p>
       </div>
+
+
+      <div class="care-grid">
+
+        <article class="care-card">
+          <span class="care-icon">♧</span>
+          <div>
+            <h3>Antioxidantes</h3>
+            <p>
+              Ajudam a combater os efeitos do estresse oxidativo,
+              contribuindo para a proteção das células.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="care-card">
+          <span class="care-icon">♢</span>
+          <div>
+            <h3>Hidratação</h3>
+            <p>
+              Contribui para manter a barreira cutânea,
+              melhorar a textura e proporcionar conforto.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="care-card">
+          <span class="care-icon">♡</span>
+          <div>
+            <h3>Hábitos saudáveis</h3>
+            <p>
+              Alimentação equilibrada, sono de qualidade
+              e controle do estresse fazem parte do cuidado.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="care-card">
+          <span class="care-icon">✧</span>
+          <div>
+            <h3>Autocuidado contínuo</h3>
+            <p>
+              Observar as necessidades da pele e manter
+              uma rotina de cuidados adequada é fundamental.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+
+      <div class="care-highlight">
+
+        <span class="highlight-icon">♡</span>
+
+        <div>
+          <span class="eyebrow">LEMBRE-SE</span>
+          <h3>
+            Envelhecer faz parte da vida.<br>
+            <em>Cuidar da pele também.</em>
+          </h3>
+        </div>
+
+      </div>
+
     </section>
 
     <section class="closing">
+
       <span class="closing-flower">✿</span>
-      <span class="eyebrow">SUNCARE</span>
-      <h2>Prevenir hoje é cuidar<br>da sua pele <em>amanhã.</em></h2>
-      <a class="button button-light" href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">Voltar ao início ↑</a>
+
+      <span class="eyebrow">SUNCARE · SAÚDE E AUTOCUIDADO</span>
+
+      <h2>
+        Prevenir é o melhor<br>
+        <em>caminho para cuidar.</em>
+      </h2>
+
+      <p>
+        Informação e hábitos conscientes fazem diferença
+        em todas as fases da vida.
+      </p>
+
+      <button
+  class="button button-light"
+  type="button"
+  onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+>
+  Voltar ao início ↑
+</button>
+
     </section>
+
   </main>
 
   <footer class="footer">
+
     <div class="footer-main">
-      <a class="logo footer-logo" href="#topo"><span class="logo-mark">✿</span> SunCare</b></a>
-      <p>Um guia educativo sobre proteção solar e saúde da pele.</p>
-      <details class="references">
-        <summary>Referências e créditos</summary>
-        <div class="reference-content">
-          <p><b>Trabalho-base:</b> “Fotoenvelhecimento e Saúde da Pele Depois dos 40” (UNINOVE, 2026).</p>
-          <p>GUAN, Linna L.; LIM, Henry W.; MOHAMMAD, Tasneem F. <i>Sunscreens and Photoaging: A Review of Current Literature.</i> American Journal of Clinical Dermatology, 2021.</p>
-          <p>KALTCHENKO, Maria V.; CHIEN, Anna L. <i>Photoaging: Current Concepts on Molecular Mechanisms, Prevention, and Treatment.</i> American Journal of Clinical Dermatology, 2025.</p>
-          <p>PEDIĆ, Lovre; PONDELJAK, Nives; ŠITUM, Mirna. <i>Recent information on photoaging mechanisms and the preventive role of topical sunscreen products.</i> Acta Dermatovenerologica Alpina, Pannonica et Adriatica, 2020.</p>
-          <p><a href="https://www.biodermabrasil.com/sua-pele/pele-e-o-sol/o-que-e-fotoenvelhecimento" target="_blank" rel="noopener">BIODERMA — Fotoenvelhecimento: o que é, causas e como cuidar.</a></p>
-          <p class="credit">Conteúdo resumido e organizado em formato educativo. A imagem do protetor solar é ilustrativa. Este site não substitui avaliação dermatológica.</p>
-        </div>
-      </details>
+
+      <div class="footer-brand">
+
+        <a class="logo footer-logo" href="#topo">
+          <span class="logo-mark">✿</span>SunCare
+        </a>
+
+        <p>
+          Um guia educativo sobre fotoenvelhecimento
+          e saúde da pele após os 40 anos.
+        </p>
+
+      </div>
+
+
+
+<details class="references">
+
+  <summary>Referências e créditos</summary>
+
+  <div class="reference-content">
+
+    <span class="credit-label">INTEGRANTES DO PROJETO</span>
+
+    <div class="students-list">
+      <p>Aline Gonçalves Ferreira</p>
+      <p>Emily Vitória Lopes Vida</p>
+      <p>Grazielly Anunciação da Cunha</p>
+      <p>Maria Luiza da Silva Teles</p>
+      <p>Kawany Dias da Silva</p>
+      <p>Yasmim dos Santos de Farias</p>
     </div>
-    <div class="footer-bottom"><span>© 2026 SunCare</span><span>Informação que inspira cuidado.</span></div>
+
+    <div class="teacher-credit">
+      <span class="credit-label">PROFESSORA ORIENTADORA</span>
+      <p>Caroline Bezerra Lima</p>
+    </div>
+
+    <div class="teacher-credit developer-credit">
+      <span class="credit-label">DESENVOLVIMENTO WEB</span>
+      <p>Alinne Oliveira</p>
+      <a
+        href="https://alinne-oliveira-portfolio.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Acessar portfólio ↗
+      </a>
+    </div>
+
+  </div>
+
+</details>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>© 2026 SunCare</span>
+
+      <span>Informação que inspira cuidado.</span>
+
+    </div>
+
   </footer>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
