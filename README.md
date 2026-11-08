@@ -4,6 +4,29 @@ Landing page *mobile-first* desenvolvida como parte de um **projeto de extensão
 
 ---
 
+## Demonstração visual
+
+Confira as versões desktop e mobile do SunCare:
+
+<table>
+  <tr>
+    <td align="center" width="60%">
+      <strong>Website</strong>
+    </td>
+    <td align="center" width="40%">
+      <strong>Mobile</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="static/img/mockup-notebook.png" width="100%" alt="SunCare na versão desktop">
+    </td>
+    <td align="center" valign="middle">
+      <img src="static/img/mockup-mobile.png" width="100%" alt="SunCare na versão mobile">
+    </td>
+  </tr>
+</table>
+
 ## Sobre o Projeto
 O objetivo principal é traduzir o conteúdo teórico e científico do trabalho acadêmico sobre fotoenvelhecimento, proteção solar e cuidados diários com a pele em uma experiência digital rápida, educativa e de fácil leitura em dispositivos móveis.
 
@@ -17,5 +40,11 @@ O objetivo principal é traduzir o conteúdo teórico e científico do trabalho 
 - `style.css` — Folha de estilos responsável pelo layout responsivo e design visual.
 - `script.js` — Lógica de interatividade (manipulação do DOM para o menu e seletores).
 
-## Como Executar
-Basta clonar o repositório e abrir o arquivo `index.html` diretamente no seu navegador ou utilizar uma extensão como o *Live Server* no VS Code.
+## Acesse o projeto 
+Explore o SunCare e conheça o guia interativo de fotoproteção.
+
+<p align="left">
+  <a href="https://suncare-beta.vercel.app/" target="_blank">
+    <strong>Acessar SunCare ↗</strong>
+  </a>
+</p>
